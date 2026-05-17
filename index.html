@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Proposal</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@600;700&amp;display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <style>
+    body { font-family: 'DM Sans', sans-serif; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+    .hero-overlay { background: linear-gradient(135deg, rgba(15,23,42,0.88) 0%, rgba(30,58,95,0.75) 100%); }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(30px); } to { opacity:1; transform:translateY(0); } }
+    .anim { opacity:0; animation: fadeUp 0.7s ease forwards; }
+    .anim-d1 { animation-delay: 0.1s; }
+    .anim-d2 { animation-delay: 0.2s; }
+    .anim-d3 { animation-delay: 0.3s; }
+    .anim-d4 { animation-delay: 0.4s; }
+    .divider { width: 60px; height: 3px; }
+    .workflow-step { position: relative; }
+    .workflow-step:not(:last-child)::after {
+      content: '→'; position: absolute; right: -1.2rem; top: 50%; transform: translateY(-50%);
+      color: #c89b3c; font-size: 1.2rem; font-weight: bold;
+    }
+    @media(max-width:768px) {
+      .workflow-step:not(:last-child)::after { content: '↓'; right: auto; left: 50%; top: auto; bottom: -1.2rem; transform: translateX(-50%); }
+    }
+  </style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="/_sdk/resizing_sdk.js" type="text/javascript"></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen w-full" style="background: rgb(248, 250, 252);"><!-- Hero -->
+  <header class="relative" style="min-height: calc(70 * min(var(--vh,1vh),1vh));"><img data-template-id="hero-img" class="canva-image absolute inset-0 w-full h-full object-cover" loading="lazy" src="https://images.pexels.com/photos/572056/pexels-photo-572056.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1920" alt="A clean, contemporary workspace featuring a desktop with analytics on the screen and plants for a fresh look">
+   <div class="hero-overlay absolute inset-0"></div>
+   <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 py-24" style="min-height: calc(70 * min(var(--vh,1vh),1vh));">
+    <p data-template-id="hero-label" class="canva-text uppercase tracking-widest text-sm anim" style="color: rgb(148, 163, 184); font-weight: 500; font-style: normal; font-size: 13px; letter-spacing: 0.15rem;">Proposal</p>
+    <h1 data-template-id="hero-title" class="canva-text font-heading mt-4 anim anim-d1" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 32px;">Automation on Business System</h1>
+    <div data-template-id="hero-divider" class="divider mx-auto mt-6 anim anim-d2" style="background: rgb(200, 155, 60);"></div>
+    <p data-template-id="hero-subtitle" class="canva-text mt-6 max-w-2xl anim anim-d3" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 18px;">A centralized paperless recruitment management system using Google Workspace to modernize and simplify the company's recruitment workflow.</p>
+    <p data-template-id="hero-date" class="canva-text mt-4 text-sm anim anim-d4" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Prepared — May 2026  |  en.dev</p>
+   </div>
+  </header>
+  <main class="max-w-4xl mx-auto px-6 py-16 space-y-20"><!-- Executive Summary -->
+   <section class="anim">
+    <h2 data-template-id="summary-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Executive Summary</h2>
+    <div data-template-id="summary-divider" class="divider mt-3 mb-6" style="background: rgb(200, 155, 60);"></div>
+    <p data-template-id="summary-text" class="canva-text leading-relaxed" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">This proposal aims to modernize and simplify the company's recruitment workflow through a centralized paperless recruitment management system. By leveraging Google Workspace and automation tools, we will eliminate manual processes, reduce paper usage, and create a streamlined hiring pipeline from application submission to employee onboarding.</p>
+   </section><!-- Why Automation -->
+   <section>
+    <h2 data-template-id="automation-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Importance of Using Automation</h2>
+    <div data-template-id="automation-divider" class="divider mt-3 mb-8" style="background: rgb(200, 155, 60);"></div>
+    <div class="grid md:grid-cols-3 gap-6">
+     <div data-template-id="auto-1" class="canva-card rounded-xl p-6 anim anim-d1" style="background: rgb(255, 255, 255);">
+      <p class="text-3xl mb-3">⚙️</p>
+      <h3 data-template-id="auto-1-title" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 600; font-style: normal; font-size: 18px;">Reduce Manual Work</h3>
+      <p data-template-id="auto-1-desc" class="canva-text mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 15px;">Automation will help reduce repetitive tasks so your team focuses on what matters.</p>
+     </div>
+     <div data-template-id="auto-2" class="canva-card rounded-xl p-6 anim anim-d2" style="background: rgb(255, 255, 255);">
+      <p class="text-3xl mb-3">🚀</p>
+      <h3 data-template-id="auto-2-title" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 600; font-style: normal; font-size: 18px;">Improve Efficiency</h3>
+      <p data-template-id="auto-2-desc" class="canva-text mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 15px;">Streamline workflows that save hours every week.</p>
+     </div>
+     <div data-template-id="auto-3" class="canva-card rounded-xl p-6 anim anim-d3" style="background: rgb(255, 255, 255);">
+      <p class="text-3xl mb-3">🌐</p>
+      <h3 data-template-id="auto-3-title" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 600; font-style: normal; font-size: 18px;">Google Workspace</h3>
+      <p data-template-id="auto-3-desc" class="canva-text mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 15px;">Leverage familiar tools like Gmail, Sheets, Drive, and Forms for seamless integration.</p>
+     </div>
+    </div>
+   </section><!-- Current Problems -->
+   <section class="anim">
+    <h2 data-template-id="problems-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Current Problems on Manual Application</h2>
+    <div data-template-id="problems-divider" class="divider mt-3 mb-6" style="background: rgb(200, 155, 60);"></div>
+    <div data-template-id="problems-card" class="canva-card rounded-xl p-6" style="background: rgb(255, 255, 255);">
+     <ul class="space-y-3">
+      <li data-template-id="problem-1" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Manual paper application</li>
+      <li data-template-id="problem-2" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Difficult applicant tracking</li>
+      <li data-template-id="problem-3" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Slow recruitment process</li>
+      <li data-template-id="problem-4" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Risk of lost documents</li>
+      <li data-template-id="problem-5" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Time-consuming encoding</li>
+      <li data-template-id="problem-6" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Hard to monitor applicant status</li>
+      <li data-template-id="problem-7" class="canva-text flex items-start gap-2" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Storage and printing cost</li>
+     </ul>
+    </div>
+   </section><!-- Proposed Solution -->
+   <section class="anim">
+    <h2 data-template-id="solution-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Proposed Solution</h2>
+    <div data-template-id="solution-divider" class="divider mt-3 mb-6" style="background: rgb(200, 155, 60);"></div>
+    <p data-template-id="solution-text" class="canva-text leading-relaxed mb-6" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 17px; line-height: 1.8;">A centralized online recruitment system designed to automate and streamline the hiring process from application submission to hiring. This solution will use:</p>
+    <div data-template-id="solution-card" class="canva-card rounded-xl p-6" style="background: rgb(255, 255, 255);">
+     <ul class="grid sm:grid-cols-2 gap-3">
+      <li data-template-id="sol-1" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Online Application Portal</li>
+      <li data-template-id="sol-2" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Email Notification</li>
+      <li data-template-id="sol-3" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Applicant Tracking Dashboard</li>
+      <li data-template-id="sol-4" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Resume Database</li>
+      <li data-template-id="sol-5" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Interview Scheduling</li>
+      <li data-template-id="sol-6" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Status Monitoring</li>
+      <li data-template-id="sol-7" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Hiring Reports</li>
+     </ul>
+    </div>
+   </section><!-- System Workflow -->
+   <section>
+    <h2 data-template-id="workflow-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">System Workflow</h2>
+    <div data-template-id="workflow-divider" class="divider mt-3 mb-8" style="background: rgb(200, 155, 60);"></div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+     <div data-template-id="wf-1" class="canva-card rounded-lg p-4 text-center anim anim-d1" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-1-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Online Application</p>
+     </div>
+     <div data-template-id="wf-2" class="canva-card rounded-lg p-4 text-center anim anim-d1" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-2-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">HR Review</p>
+     </div>
+     <div data-template-id="wf-3" class="canva-card rounded-lg p-4 text-center anim anim-d2" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-3-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Shortlisting</p>
+     </div>
+     <div data-template-id="wf-4" class="canva-card rounded-lg p-4 text-center anim anim-d2" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-4-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Interview Scheduling</p>
+     </div>
+     <div data-template-id="wf-5" class="canva-card rounded-lg p-4 text-center anim anim-d3" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-5-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Assessment</p>
+     </div>
+     <div data-template-id="wf-6" class="canva-card rounded-lg p-4 text-center anim anim-d3" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-6-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Final Interview</p>
+     </div>
+     <div data-template-id="wf-7" class="canva-card rounded-lg p-4 text-center anim anim-d4" style="background: rgb(30, 58, 95);">
+      <p data-template-id="wf-7-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Hiring Decision</p>
+     </div>
+     <div data-template-id="wf-8" class="canva-card rounded-lg p-4 text-center anim anim-d4" style="background: rgb(200, 155, 60);">
+      <p data-template-id="wf-8-text" class="canva-text font-medium" style="color: rgb(255, 255, 255); font-weight: 400; font-style: normal; font-size: 14px;">Employee Onboarding</p>
+     </div>
+    </div>
+   </section><!-- Key Features -->
+   <section>
+    <h2 data-template-id="features-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Key Features</h2>
+    <div data-template-id="features-divider" class="divider mt-3 mb-8" style="background: rgb(200, 155, 60);"></div>
+    <div class="grid sm:grid-cols-2 gap-4">
+     <div data-template-id="feat-1" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d1" style="background: rgb(255, 255, 255);">
+      <i data-lucide="user" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-1-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Applicant Portal</p>
+     </div>
+     <div data-template-id="feat-2" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d1" style="background: rgb(255, 255, 255);">
+      <i data-lucide="layout-dashboard" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-2-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">HR Dashboard</p>
+     </div>
+     <div data-template-id="feat-3" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d2" style="background: rgb(255, 255, 255);">
+      <i data-lucide="file-text" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-3-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Resume Management</p>
+     </div>
+     <div data-template-id="feat-4" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d2" style="background: rgb(255, 255, 255);">
+      <i data-lucide="mail" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-4-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Email Notifications</p>
+     </div>
+     <div data-template-id="feat-5" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d3" style="background: rgb(255, 255, 255);">
+      <i data-lucide="calendar" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-5-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Interview Tracking</p>
+     </div>
+     <div data-template-id="feat-6" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d3" style="background: rgb(255, 255, 255);">
+      <i data-lucide="bar-chart-2" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-6-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Analytics &amp; Reports</p>
+     </div>
+     <div data-template-id="feat-7" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d4" style="background: rgb(255, 255, 255);">
+      <i data-lucide="shield" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-7-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">User Access Control</p>
+     </div>
+     <div data-template-id="feat-8" class="canva-card rounded-lg p-4 flex items-center gap-3 anim anim-d4" style="background: rgb(255, 255, 255);">
+      <i data-lucide="folder" class="w-5 h-5 text-blue-600 shrink-0"></i>
+      <p data-template-id="feat-8-text" class="canva-text" style="color: rgb(15, 23, 42); font-weight: 400; font-style: normal; font-size: 16px;">Paperless Document Storage</p>
+     </div>
+    </div>
+   </section><!-- Benefits -->
+   <section>
+    <h2 data-template-id="benefits-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Benefits to the Company</h2>
+    <div data-template-id="benefits-divider" class="divider mt-3 mb-8" style="background: rgb(200, 155, 60);"></div>
+    <div data-template-id="benefits-card" class="canva-card rounded-xl p-6" style="background: rgb(255, 255, 255);">
+     <ul class="grid sm:grid-cols-2 gap-3">
+      <li data-template-id="ben-1" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Faster hiring process</li>
+      <li data-template-id="ben-2" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Reduced paper usage</li>
+      <li data-template-id="ben-3" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Better applicant organization</li>
+      <li data-template-id="ben-4" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Real-time monitoring</li>
+      <li data-template-id="ben-5" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Easier reporting</li>
+      <li data-template-id="ben-6" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Improved applicant experience</li>
+      <li data-template-id="ben-7" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Reduced manual workload</li>
+      <li data-template-id="ben-8" class="canva-text flex items-center gap-2" style="color: rgb(30, 58, 95); font-weight: 400; font-style: normal; font-size: 16px;">Centralized recruitment records</li>
+     </ul>
+    </div>
+   </section><!-- Technical Overview -->
+   <section class="anim">
+    <h2 data-template-id="tech-heading" class="canva-text font-heading" style="color: rgb(15, 23, 42); font-weight: 700; font-style: normal; font-size: 24px;">Technical Overview</h2>
+    <div data-template-id="tech-divider" class="divider mt-3 mb-6" style="background: rgb(200, 155, 60);"></div>
+    <div data-template-id="tech-card" class="canva-card rounded-xl p-6" style="background: rgb(255, 255, 255);">
+     <ul class="space-y-2">
+      <li data-template-id="tech-1" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">• Web-based system</li>
+      <li data-template-id="tech-2" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">• Accessible via browser</li>
+      <li data-template-id="tech-3" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">• Secure database storage</li>
+      <li data-template-id="tech-4" class="canva-text" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">• Cloud/local server deployment</li>
+     </ul>
+    </div>
+   </section><!-- Expected Outcome / CTA -->
+   <section data-template-id="cta-section" class="canva-section rounded-2xl p-10 text-center anim" style="background: rgb(30, 58, 95);">
+    <h2 data-template-id="cta-heading" class="canva-text font-heading" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 24px;">Expected Outcomes</h2>
+    <ul class="mt-6 space-y-2 text-left max-w-md mx-auto">
+     <li data-template-id="outcome-1" class="canva-text flex items-center gap-2" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Fully digital recruitment process</li>
+     <li data-template-id="outcome-2" class="canva-text flex items-center gap-2" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Reduced processing time</li>
+     <li data-template-id="outcome-3" class="canva-text flex items-center gap-2" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Better applicant tracking</li>
+     <li data-template-id="outcome-4" class="canva-text flex items-center gap-2" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Organized HR workflow</li>
+     <li data-template-id="outcome-5" class="canva-text flex items-center gap-2" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Scalable hiring process (KPI)</li>
+    </ul>
+    <p data-template-id="cta-contact" class="canva-text mt-8 font-medium" style="color: rgb(200, 155, 60); font-weight: 400; font-style: normal; font-size: 17px;">en.dev  |  Google Workspace Automation</p>
+   </section>
+  </main>
+  <footer class="py-8 text-center">
+   <p data-template-id="footer-text" class="canva-text text-sm" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">© 2026 en.dev — Business Automation Proposal. All rights reserved.</p>
+  </footer>
+  <script src="/_sdk/editing_sdk.js"></script>
+  <script>lucide.createIcons();</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9fcf9827b6d2404c',t:'MTc3ODk4OTE2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body></html>
